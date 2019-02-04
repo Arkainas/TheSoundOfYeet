@@ -19,7 +19,7 @@ public class Follow_mouse : MonoBehaviour
 
         Vector2 direction = new Vector2(mouseposition.x - transform.position.x, mouseposition.y - transform.position.y);
 
-        transform.up = direction;
+        transform.right = direction;
              
 
     }
