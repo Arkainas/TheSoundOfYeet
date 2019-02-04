@@ -28,7 +28,7 @@ public class Damage_Script : MonoBehaviour
 
             if (enemyHealth)
             {
-                enemyHealth.ChangedHealth(-damage)
+                enemyHealth.ChangedHealth(-damage);
             }
 
             Destroy(gameObject);
