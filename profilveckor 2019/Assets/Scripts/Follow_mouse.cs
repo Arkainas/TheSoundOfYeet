@@ -14,12 +14,16 @@ public class Follow_mouse : MonoBehaviour
     // Update is called once per frame
     void follow_Mouse()
     {
-        Vector3 mouseposition = Input.mousePosition;
-        mouseposition = Camera.main.ScreenToWorldPoint(mouseposition);
 
-        Vector2 direction = new Vector2(mouseposition.x - transform.position.x, mouseposition.y - transform.position.y);
+        if (gameObject.tag == "Player")
+        {
+            Vector3 mouseposition = Input.mousePosition;
+            mouseposition = Camera.main.ScreenToWorldPoint(mouseposition);
 
-        transform.up = direction;
+            Vector2 direction = new Vector2(mouseposition.x - transform.position.x, mouseposition.y - transform.position.y);
+
+            transform.right = direction;
+        }
              
 
     }
