@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class BulletMove : MonoBehaviour
 {
-    float speed = 5;
-    Vector2 dir = Vector2.right;
+    float speed = 1f;
+    float dirX = 1;
     Rigidbody2D bulletRigidbody;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -17,11 +16,6 @@ public class BulletMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bulletRigidbody.velocity = dir * speed;
-    }
-
-    public void SetDir (Vector2 bulletDir)
-    {
-        dir = bulletDir;
+        bulletRigidbody.velocity = Vector2.right * dirX * speed;
     }
 }
