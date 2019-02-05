@@ -178,6 +178,7 @@ BoxCollider2D:
   m_EdgeRadius: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &104817505
 =======
 --- !u!1 &217560685
@@ -288,6 +289,9 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &367157896
 >>>>>>> 5e2749767f6b3c9d4f8c929ab738410058932429
+=======
+--- !u!1 &367157896
+>>>>>>> parent of 71be98c... Added collisionboxes to all the walls
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -296,9 +300,19 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - component: {fileID: 104817506}
   m_Layer: 0
   m_Name: transform7
+=======
+  - component: {fileID: 367157901}
+  - component: {fileID: 367157900}
+  - component: {fileID: 367157899}
+  - component: {fileID: 367157898}
+  - component: {fileID: 367157897}
+  m_Layer: 0
+  m_Name: New Sprite
+>>>>>>> parent of 71be98c... Added collisionboxes to all the walls
   m_TagString: Untagged
 =======
   - component: {fileID: 367157901}
@@ -316,12 +330,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 --- !u!4 &104817506
 Transform:
+=======
+--- !u!61 &367157897
+BoxCollider2D:
+>>>>>>> parent of 71be98c... Added collisionboxes to all the walls
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 104817505}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
@@ -332,10 +352,36 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &114729161
 GameObject:
+=======
+  m_GameObject: {fileID: 367157896}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.89, y: 2.24}
+    newSize: {x: 2.89, y: 2.24}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.9}
+  m_EdgeRadius: 0
+--- !u!50 &367157898
+Rigidbody2D:
+  serializedVersion: 4
+>>>>>>> parent of 71be98c... Added collisionboxes to all the walls
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   serializedVersion: 6
   m_Component:
   - component: {fileID: 114729162}
@@ -348,10 +394,29 @@ GameObject:
   m_IsActive: 1
 --- !u!4 &114729162
 Transform:
+=======
+  m_GameObject: {fileID: 367157896}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!212 &367157899
+SpriteRenderer:
+>>>>>>> parent of 71be98c... Added collisionboxes to all the walls
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 114729161}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
@@ -365,10 +430,57 @@ Transform:
 --- !u!1 &367157896
 >>>>>>> parent of 71be98c... Added collisionboxes to all the walls
 GameObject:
+=======
+  m_GameObject: {fileID: 367157896}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 237b975c722c3b84ebff68d953756321, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.89, y: 2.24}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &367157900
+MonoBehaviour:
+>>>>>>> parent of 71be98c... Added collisionboxes to all the walls
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   serializedVersion: 6
   m_Component:
   - component: {fileID: 367157901}
@@ -385,10 +497,23 @@ GameObject:
   m_IsActive: 1
 --- !u!61 &367157897
 BoxCollider2D:
+=======
+  m_GameObject: {fileID: 367157896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f0c985404c40c44ca134bff41ef7876, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panSpeed: 5
+  speed: 0.5
+--- !u!4 &367157901
+Transform:
+>>>>>>> parent of 71be98c... Added collisionboxes to all the walls
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 134194797}
@@ -415,6 +540,29 @@ MonoBehaviour:
 >>>>>>> 5e2749767f6b3c9d4f8c929ab738410058932429
 =======
   m_GameObject: {fileID: 367157896}
+=======
+  m_GameObject: {fileID: 367157896}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.88791597, y: 0.7, z: -8.888}
+  m_LocalScale: {x: 0.06, y: 0.06, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &432345966 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100004, guid: e8d316fd777849146baec8cbface6524,
+    type: 3}
+  m_PrefabInstance: {fileID: 1985386049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &432345968
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 432345966}
+>>>>>>> parent of 71be98c... Added collisionboxes to all the walls
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -434,6 +582,7 @@ MonoBehaviour:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.9}
   m_EdgeRadius: 0
+<<<<<<< HEAD
 --- !u!50 &367157898
 Rigidbody2D:
   serializedVersion: 4
@@ -589,31 +738,7 @@ GameObject:
   m_PrefabInstance: {fileID: 1985386049}
   m_PrefabAsset: {fileID: 0}
 --- !u!61 &432345968
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 432345966}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.01, y: 0.01}
-  m_EdgeRadius: 0
+=======
 --- !u!1 &473916601 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100036, guid: e8d316fd777849146baec8cbface6524,
@@ -653,12 +778,17 @@ GameObject:
   m_PrefabInstance: {fileID: 1985386049}
   m_PrefabAsset: {fileID: 0}
 --- !u!61 &517779500
+>>>>>>> parent of 71be98c... Added collisionboxes to all the walls
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+  m_GameObject: {fileID: 432345966}
+=======
   m_GameObject: {fileID: 517779498}
+>>>>>>> parent of 71be98c... Added collisionboxes to all the walls
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -678,6 +808,85 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.01, y: 0.01}
   m_EdgeRadius: 0
+<<<<<<< HEAD
+--- !u!1 &473916601 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100036, guid: e8d316fd777849146baec8cbface6524,
+    type: 3}
+  m_PrefabInstance: {fileID: 1985386049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &473916603
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473916601}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.01, y: 0.01}
+  m_EdgeRadius: 0
+--- !u!1 &517779498 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100008, guid: e8d316fd777849146baec8cbface6524,
+    type: 3}
+  m_PrefabInstance: {fileID: 1985386049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &517779500
+=======
+--- !u!1 &621904575 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100020, guid: e8d316fd777849146baec8cbface6524,
+    type: 3}
+  m_PrefabInstance: {fileID: 1985386049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &621904577
+>>>>>>> parent of 71be98c... Added collisionboxes to all the walls
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+  m_GameObject: {fileID: 517779498}
+=======
+  m_GameObject: {fileID: 621904575}
+>>>>>>> parent of 71be98c... Added collisionboxes to all the walls
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.01, y: 0.01}
+  m_EdgeRadius: 0
+<<<<<<< HEAD
 --- !u!1 &621904575 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100020, guid: e8d316fd777849146baec8cbface6524,
@@ -749,12 +958,25 @@ GameObject:
   m_PrefabInstance: {fileID: 1985386049}
   m_PrefabAsset: {fileID: 0}
 --- !u!61 &655349835
+=======
+--- !u!1 &646634076 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100024, guid: e8d316fd777849146baec8cbface6524,
+    type: 3}
+  m_PrefabInstance: {fileID: 1985386049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &646634078
+>>>>>>> parent of 71be98c... Added collisionboxes to all the walls
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 655349833}
+=======
+  m_GameObject: {fileID: 646634076}
+>>>>>>> parent of 71be98c... Added collisionboxes to all the walls
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -774,6 +996,98 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.01, y: 0.01}
   m_EdgeRadius: 0
+<<<<<<< HEAD
+--- !u!1 &657118029 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100028, guid: e8d316fd777849146baec8cbface6524,
+    type: 3}
+  m_PrefabInstance: {fileID: 1985386049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &657118031
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657118029}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.01, y: 0.01}
+  m_EdgeRadius: 0
+--- !u!1 &673821559 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100038, guid: e8d316fd777849146baec8cbface6524,
+    type: 3}
+  m_PrefabInstance: {fileID: 1985386049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &673821561
+=======
+--- !u!1 &655349833 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100016, guid: e8d316fd777849146baec8cbface6524,
+    type: 3}
+  m_PrefabInstance: {fileID: 1985386049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &655349835
+>>>>>>> parent of 71be98c... Added collisionboxes to all the walls
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+  m_GameObject: {fileID: 673821559}
+=======
+  m_GameObject: {fileID: 655349833}
+>>>>>>> parent of 71be98c... Added collisionboxes to all the walls
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.01, y: 0.01}
+  m_EdgeRadius: 0
+<<<<<<< HEAD
+--- !u!1 &760409310 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100040, guid: e8d316fd777849146baec8cbface6524,
+    type: 3}
+  m_PrefabInstance: {fileID: 1985386049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &760409312
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+=======
 --- !u!1 &657118029 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100028, guid: e8d316fd777849146baec8cbface6524,
@@ -850,6 +1164,7 @@ BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+>>>>>>> parent of 71be98c... Added collisionboxes to all the walls
   m_GameObject: {fileID: 760409310}
   m_Enabled: 1
   m_Density: 1
@@ -946,6 +1261,7 @@ BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   serializedVersion: 6
   m_Component:
@@ -1198,6 +1514,9 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1985417445}
+=======
+  m_GameObject: {fileID: 904549824}
+>>>>>>> parent of 71be98c... Added collisionboxes to all the walls
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -1217,6 +1536,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.01, y: 0.01}
   m_EdgeRadius: 0
+<<<<<<< HEAD
 --- !u!1 &435691911
 GameObject:
   m_ObjectHideFlags: 0
@@ -1341,6 +1661,14 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1985386049}
   m_PrefabAsset: {fileID: 0}
+=======
+--- !u!1 &1038978482 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100042, guid: e8d316fd777849146baec8cbface6524,
+    type: 3}
+  m_PrefabInstance: {fileID: 1985386049}
+  m_PrefabAsset: {fileID: 0}
+>>>>>>> parent of 71be98c... Added collisionboxes to all the walls
 --- !u!61 &1038978484
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1406,6 +1734,7 @@ GameObject:
   m_PrefabInstance: {fileID: 1985386049}
   m_PrefabAsset: {fileID: 0}
 --- !u!61 &1242306102
+<<<<<<< HEAD
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1616,12 +1945,18 @@ GameObject:
   m_PrefabInstance: {fileID: 1985386049}
   m_PrefabAsset: {fileID: 0}
 --- !u!61 &1586402519
+=======
+>>>>>>> parent of 71be98c... Added collisionboxes to all the walls
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1586402517}
+=======
+  m_GameObject: {fileID: 1242306100}
+>>>>>>> parent of 71be98c... Added collisionboxes to all the walls
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -1641,6 +1976,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.01, y: 0.01}
   m_EdgeRadius: 0
+<<<<<<< HEAD
 --- !u!1 &1760237081 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100018, guid: e8d316fd777849146baec8cbface6524,
@@ -1648,12 +1984,20 @@ GameObject:
   m_PrefabInstance: {fileID: 1985386049}
   m_PrefabAsset: {fileID: 0}
 --- !u!61 &1760237083
+=======
+--- !u!1 &1354984444 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100010, guid: e8d316fd777849146baec8cbface6524,
+    type: 3}
+  m_PrefabInstance: {fileID: 1985386049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1354984446
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1760237081}
+  m_GameObject: {fileID: 1354984444}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -1673,18 +2017,159 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.01, y: 0.01}
   m_EdgeRadius: 0
---- !u!1 &1802437318 stripped
+--- !u!1 &1393852358 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 100006, guid: e8d316fd777849146baec8cbface6524,
+  m_CorrespondingSourceObject: {fileID: 100048, guid: e8d316fd777849146baec8cbface6524,
     type: 3}
   m_PrefabInstance: {fileID: 1985386049}
   m_PrefabAsset: {fileID: 0}
---- !u!61 &1802437320
+--- !u!61 &1393852360
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393852358}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.01, y: 0.01}
+  m_EdgeRadius: 0
+--- !u!1 &1415534331 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100014, guid: e8d316fd777849146baec8cbface6524,
+    type: 3}
+  m_PrefabInstance: {fileID: 1985386049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1415534333
+>>>>>>> parent of 71be98c... Added collisionboxes to all the walls
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+  m_GameObject: {fileID: 1760237081}
+=======
+  m_GameObject: {fileID: 1415534331}
+>>>>>>> parent of 71be98c... Added collisionboxes to all the walls
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.01, y: 0.01}
+  m_EdgeRadius: 0
+<<<<<<< HEAD
+--- !u!1 &1802437318 stripped
+=======
+--- !u!1 &1525098411
+>>>>>>> parent of 71be98c... Added collisionboxes to all the walls
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100006, guid: e8d316fd777849146baec8cbface6524,
+    type: 3}
+  m_PrefabInstance: {fileID: 1985386049}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+--- !u!61 &1802437320
+BoxCollider2D:
+=======
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1525098414}
+  - component: {fileID: 1525098413}
+  - component: {fileID: 1525098412}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &1525098412
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525098411}
+  m_Enabled: 1
+--- !u!20 &1525098413
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525098411}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_GateFitMode: 2
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 0.97930336
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &1525098414
+Transform:
+>>>>>>> parent of 71be98c... Added collisionboxes to all the walls
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1802437318}
   m_Enabled: 1
   m_Density: 1
@@ -1712,12 +2197,33 @@ GameObject:
   m_PrefabInstance: {fileID: 1985386049}
   m_PrefabAsset: {fileID: 0}
 --- !u!61 &1809070996
+=======
+  m_GameObject: {fileID: 1525098411}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.069, z: -9.279}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1586402517 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100064, guid: e8d316fd777849146baec8cbface6524,
+    type: 3}
+  m_PrefabInstance: {fileID: 1985386049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1586402519
+>>>>>>> parent of 71be98c... Added collisionboxes to all the walls
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1809070994}
+=======
+  m_GameObject: {fileID: 1586402517}
+>>>>>>> parent of 71be98c... Added collisionboxes to all the walls
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -1737,6 +2243,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.01, y: 0.01}
   m_EdgeRadius: 0
+<<<<<<< HEAD
 --- !u!1 &1900956337 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100066, guid: e8d316fd777849146baec8cbface6524,
@@ -1771,6 +2278,16 @@ BoxCollider2D:
   m_EdgeRadius: 0
 --- !u!1001 &1985386049
 PrefabInstance:
+=======
+--- !u!1 &1760237081 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100018, guid: e8d316fd777849146baec8cbface6524,
+    type: 3}
+  m_PrefabInstance: {fileID: 1985386049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1760237083
+BoxCollider2D:
+>>>>>>> parent of 71be98c... Added collisionboxes to all the walls
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
@@ -1844,6 +2361,239 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1985386049}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+--- !u!61 &2018739440
+=======
+  m_GameObject: {fileID: 1760237081}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.01, y: 0.01}
+  m_EdgeRadius: 0
+--- !u!1 &1802437318 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100006, guid: e8d316fd777849146baec8cbface6524,
+    type: 3}
+  m_PrefabInstance: {fileID: 1985386049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1802437320
+>>>>>>> parent of 71be98c... Added collisionboxes to all the walls
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+  m_GameObject: {fileID: 2018739438}
+=======
+  m_GameObject: {fileID: 1802437318}
+>>>>>>> parent of 71be98c... Added collisionboxes to all the walls
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.01, y: 0.01}
+  m_EdgeRadius: 0
+<<<<<<< HEAD
+--- !u!1 &2048510642 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100032, guid: e8d316fd777849146baec8cbface6524,
+    type: 3}
+  m_PrefabInstance: {fileID: 1985386049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &2048510644
+=======
+--- !u!1 &1809070994 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100068, guid: e8d316fd777849146baec8cbface6524,
+    type: 3}
+  m_PrefabInstance: {fileID: 1985386049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1809070996
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809070994}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.01, y: 0.01}
+  m_EdgeRadius: 0
+--- !u!1 &1900956337 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100066, guid: e8d316fd777849146baec8cbface6524,
+    type: 3}
+  m_PrefabInstance: {fileID: 1985386049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1900956339
+>>>>>>> parent of 71be98c... Added collisionboxes to all the walls
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+  m_GameObject: {fileID: 2048510642}
+=======
+  m_GameObject: {fileID: 1900956337}
+>>>>>>> parent of 71be98c... Added collisionboxes to all the walls
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.01, y: 0.01}
+  m_EdgeRadius: 0
+<<<<<<< HEAD
+--- !u!1 &2106429312
+GameObject:
+=======
+--- !u!1001 &1985386049
+PrefabInstance:
+>>>>>>> parent of 71be98c... Added collisionboxes to all the walls
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 100002, guid: e8d316fd777849146baec8cbface6524, type: 3}
+      propertyPath: m_Name
+      value: map_#2
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: e8d316fd777849146baec8cbface6524, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: e8d316fd777849146baec8cbface6524, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: e8d316fd777849146baec8cbface6524, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: e8d316fd777849146baec8cbface6524, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: e8d316fd777849146baec8cbface6524, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: e8d316fd777849146baec8cbface6524, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: e8d316fd777849146baec8cbface6524, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: e8d316fd777849146baec8cbface6524, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: e8d316fd777849146baec8cbface6524, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: e8d316fd777849146baec8cbface6524, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: e8d316fd777849146baec8cbface6524, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: e8d316fd777849146baec8cbface6524, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 20.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: e8d316fd777849146baec8cbface6524, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 16.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: e8d316fd777849146baec8cbface6524, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 20
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e8d316fd777849146baec8cbface6524, type: 3}
+--- !u!1 &2018739438 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100026, guid: e8d316fd777849146baec8cbface6524,
+    type: 3}
+  m_PrefabInstance: {fileID: 1985386049}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2106429315}
+  - component: {fileID: 2106429314}
+  - component: {fileID: 2106429313}
+  m_Layer: 0
+  m_Name: New Sprite (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &2106429313
+=======
 --- !u!61 &2018739440
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1877,56 +2627,17 @@ GameObject:
   m_PrefabInstance: {fileID: 1985386049}
   m_PrefabAsset: {fileID: 0}
 --- !u!61 &2048510644
+>>>>>>> parent of 71be98c... Added collisionboxes to all the walls
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2048510642}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.01, y: 0.01}
-  m_EdgeRadius: 0
---- !u!1 &2106429312
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2106429315}
-  - component: {fileID: 2106429314}
-  - component: {fileID: 2106429313}
-  m_Layer: 0
-  m_Name: New Sprite (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!61 &2106429313
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 2106429312}
+=======
+  m_GameObject: {fileID: 2048510642}
+>>>>>>> parent of 71be98c... Added collisionboxes to all the walls
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
