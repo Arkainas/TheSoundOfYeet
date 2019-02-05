@@ -2,6 +2,7 @@
 
 public class Follow_mouse : MonoBehaviour
 {
+    public GameObject bullet;
     // Start is called before the first frame update
     void Update()
     {
@@ -14,12 +15,19 @@ public class Follow_mouse : MonoBehaviour
     // Update is called once per frame
     void follow_Mouse()
     {
-        Vector3 mouseposition = Input.mousePosition;
-        mouseposition = Camera.main.ScreenToWorldPoint(mouseposition);
 
-        Vector2 direction = new Vector2(mouseposition.x - transform.position.x, mouseposition.y - transform.position.y);
+        if (gameObject.tag == "Player")
+        {
+            Vector3 mouseposition = Input.mousePosition;
 
-        transform.up = direction;
+            mouseposition = Camera.main.ScreenToWorldPoint(mouseposition);
+
+            Vector2 direction = new Vector2(mouseposition.x - transform.position.x, mouseposition.y - transform.position.y);
+
+            transform.right = direction;
+
+            
+        }
              
 
     }
