@@ -7,12 +7,12 @@ public class Weapon_Manager : MonoBehaviour
 
 
     public GameObject activeWeapon;
-    weapon wpn;
+    Weapon wpn;
 
     // Start is called before the first frame update
     void Start()
     {
-        wpn = activeWeapon.GetComponent<weapon>();
+        wpn = activeWeapon.GetComponent<Weapon>();
 
         GetComponent<SpriteRenderer>().sprite = wpn.sprite;
     }
@@ -26,7 +26,7 @@ public class Weapon_Manager : MonoBehaviour
             
             GameObject projectile = (GameObject)Instantiate(wpn.projectile, transform.position + activeWeapon.transform.GetChild (0).localPosition, Quaternion.identity);
 
-            if (wpn.projectileMode == weapon.Modes.Straight)
+            if (wpn.projectileMode == Weapon.Modes.Straight)
                 projectile.GetComponent<Rigidbody2D>().velocity = transform.parent.localScale.x * Vector2.right * wpn.projectileSpeed;
             {
 
