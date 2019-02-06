@@ -19,11 +19,13 @@ public class MovementScript2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (Input.GetKey(KeyCode.A))
         {
             if (playerController.speedBuffActive)
             {
                 transform.position += Vector3.left * speed * Time.deltaTime * speedBoostMultiplier;
+                Debug.Log(transform.position);
             }
             else
             {
