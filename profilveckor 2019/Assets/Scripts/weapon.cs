@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class weapon : MonoBehaviour
+public class Weapon : MonoBehaviour
 {
 
     public enum Modes
-    { melle, Straight, Follow, Throw}
+    { melee, Straight, Follow, Throw}
 
     public Sprite sprite;
     public GameObject projectile;

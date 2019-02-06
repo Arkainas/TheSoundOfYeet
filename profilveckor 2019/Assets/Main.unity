@@ -1039,6 +1039,7 @@ GameObject:
   - component: {fileID: 367157898}
   - component: {fileID: 367157897}
   - component: {fileID: 367157903}
+  - component: {fileID: 302134487393862177}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1153,7 +1154,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb71319c8826f7b48a81efb4cae4d97d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  panSpeed: 20
+  speed: 0.5
+  speedBoostMultiplier: 1.5
 --- !u!4 &367157901
 Transform:
   m_ObjectHideFlags: 0
@@ -1180,7 +1183,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab1e17e3269fed24faf23c063d3ee0a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 6948490623823829356, guid: 2ba828c53ace7ec439a3e643ded4f875, type: 3}
 --- !u!114 &367157903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2251,6 +2253,7 @@ GameObject:
   - component: {fileID: 1012147555}
   - component: {fileID: 1012147558}
   - component: {fileID: 1012147554}
+  - component: {fileID: 1012147559}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -2379,6 +2382,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f362c2cd8fb27ef43bf6227a59330906, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
+--- !u!114 &1012147559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012147553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef2c2e85c0a2b224083856f2035f4b8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defenseBuffActive: 0
+  invincibleBuffActive: 0
+  speedBuffActive: 0
+  healthBuffActive: 0
+  defenseTimer: 500
+  invincibilityTimer: 500
+  speedTimer: 0
+  healthTimer: 0
 --- !u!1 &1023844134
 GameObject:
   m_ObjectHideFlags: 0
@@ -3962,8 +3986,8 @@ HingeJoint2D:
     m_MaximumMotorForce: 10000
   m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: -136.89827
-    m_UpperAngle: 126.26832
+    m_LowerAngle: -90
+    m_UpperAngle: 90
 --- !u!61 &1811545117
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6918,3 +6942,23 @@ Transform:
   m_Father: {fileID: 934577760}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &302134487393862177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367157896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef2c2e85c0a2b224083856f2035f4b8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defenseBuffActive: 1
+  invincibleBuffActive: 1
+  speedBuffActive: 1
+  healthBuffActive: 1
+  defenseTimer: 3
+  invincibilityTimer: 2
+  speedTimer: 5
+  healthTimer: 5

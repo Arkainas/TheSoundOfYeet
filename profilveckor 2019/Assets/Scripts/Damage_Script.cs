@@ -5,8 +5,11 @@ using UnityEngine;
 public class Damage_Script : MonoBehaviour
 {
 
-
+    [SerializeField]
     float damage = 50;
+    [SerializeField]
+    float damageReduction;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +29,17 @@ public class Damage_Script : MonoBehaviour
         {
             Health_Script enemyHealth = collision.gameObject.GetComponent<Health_Script>();
 
-            if (enemyHealth)
+            PlayerController enemyDamageReduction = collision.gameObject.GetComponent<PlayerController>();
+
+            if (enemyHealth && enemyDamageReduction.invincibleBuffActive)
+            {
+                enemyHealth.ChangedHealth(-damage * 0);
+            }
+            else if (enemyHealth && enemyDamageReduction.defenseBuffActive)
+            {
+                enemyHealth.ChangedHealth(-damage * damageReduction);
+            }
+            else if(enemyHealth)
             {
                 enemyHealth.ChangedHealth(-damage);
             }
