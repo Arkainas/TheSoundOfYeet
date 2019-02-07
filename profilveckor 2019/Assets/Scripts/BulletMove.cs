@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,5 +19,10 @@ public class BulletMove : MonoBehaviour
     void Update()
     {
         bulletRigidbody.velocity = Vector2.right * dirX * speed;
+    }
+
+    internal void SetDir(Vector2 dir)
+    {
+        throw new NotImplementedException();
     }
 }
