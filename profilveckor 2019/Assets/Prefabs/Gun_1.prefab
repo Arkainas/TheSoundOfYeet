@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 194835775}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.3699, y: 0.038, z: -1.0144013}
+  m_LocalPosition: {x: 0.1, y: 0.038, z: -1.0144013}
   m_LocalScale: {x: 1.1363636, y: 1.9607844, z: 0.2}
   m_Children: []
   m_Father: {fileID: 1787919491310260551}
@@ -148,7 +148,6 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: a53d4f5540f79464fadcf1d92b798560, type: 3}
   projectile: {fileID: 6948490623823829356, guid: 2ba828c53ace7ec439a3e643ded4f875,
     type: 3}
-  projectileSpeed: 5
+  projectileSpeed: 10
   coolDown: 0
-  tip: {x: 0, y: 0, z: 0}
   projectileMode: 1
