@@ -35,7 +35,7 @@ public class Weapon_Manager : MonoBehaviour
 
             Vector2 dir = Camera.main.ScreenToWorldPoint(Input.mousePosition) - wpn.transform.position;
 
-            wpn.projectile.GetComponent<BulletMove>().SetDir(dir);
+            projectile.GetComponent<BulletMove>().SetDir(dir);
 
             if (wpn.projectileMode == weapon.Modes.Straight)   
             {

@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: a53d4f5540f79464fadcf1d92b798560, type: 3}
-  projectile: {fileID: 6948490623823829356, guid: 2ba828c53ace7ec439a3e643ded4f875,
+  projectile: {fileID: 4524270412205029759, guid: 224a93005bed9b447ad5ad4cd9538365,
     type: 3}
   projectileSpeed: 10
   coolDown: 0
