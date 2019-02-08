@@ -81,7 +81,7 @@ PrefabInstance:
         type: 3}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 4293972865101584937, guid: 59cdc45f2d87d0448ae4b4e800f2e1b2,
+      objectReference: {fileID: 4524270412205029759, guid: 224a93005bed9b447ad5ad4cd9538365,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c747403c1298b54f9fa52ee9a413ee4, type: 3}

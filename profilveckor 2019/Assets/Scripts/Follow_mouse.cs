@@ -18,9 +18,9 @@ public class Follow_mouse : MonoBehaviour
 
         if (v)
         {
-            Vector3 mousePosition = Input.mousePosition;
-            Vector3 characterScreenPos = Camera.main.WorldToScreenPoint(transform.position);
-            Vector3 direction = mousePosition - characterScreenPos;
+            Vector2 mousePosition = Input.mousePosition;
+            Vector2 characterScreenPos = Camera.main.WorldToScreenPoint(transform.position);
+            Vector2 direction = mousePosition - characterScreenPos;
             
             transform.right = direction;
 

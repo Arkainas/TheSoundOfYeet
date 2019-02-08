@@ -122,9 +122,10 @@ GameObject:
   m_Component:
   - component: {fileID: 571413663}
   - component: {fileID: 571413662}
+  - component: {fileID: 571413661}
+  - component: {fileID: 571413666}
   - component: {fileID: 571413664}
   - component: {fileID: 571413660}
-  - component: {fileID: 571413661}
   - component: {fileID: 571413665}
   m_Layer: 0
   m_Name: player
@@ -142,11 +143,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 571413659}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb71319c8826f7b48a81efb4cae4d97d, type: 3}
+  m_Script: {fileID: 11500000, guid: b50298fee0f09e74fa4b4d25bd906bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panSpeed: 20
-  speed: 10
 --- !u!61 &571413661
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -245,9 +244,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 571413659}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab1e17e3269fed24faf23c063d3ee0a2, type: 3}
+  m_Script: {fileID: 11500000, guid: ef2c2e85c0a2b224083856f2035f4b8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defenseBuffActive: 0
+  invincibleBuffActive: 0
+  speedBuffActive: 0
+  healthBuffActive: 0
+  defenseTimer: 0
+  invincibilityTimer: 0
+  speedTimer: 0
+  healthTimer: 0
 --- !u!50 &571413665
 Rigidbody2D:
   serializedVersion: 4
@@ -269,6 +276,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &571413666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571413659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d597951e4c34c5c41be5198f71e60e72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panSpeed: 20
+  speed: 10
+  speedBoostMultiplier: 0
 --- !u!1 &972638957
 GameObject:
   m_ObjectHideFlags: 0
@@ -313,7 +335,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19640c802e0c67343998ae7dec48edf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeWeapon: {fileID: 0}
+  activeWeapon: {fileID: 6948490623823829356, guid: 1c747403c1298b54f9fa52ee9a413ee4,
+    type: 3}
 --- !u!212 &972638960
 SpriteRenderer:
   m_ObjectHideFlags: 0
