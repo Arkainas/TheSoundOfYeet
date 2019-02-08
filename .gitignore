@@ -35,3 +35,5 @@ sysinfo.txt
 *.apk
 *.unitypackage
 profilveckor 2019/Assets/Scenes/SampleScene.unity.meta
+*.meta
+*.meta
