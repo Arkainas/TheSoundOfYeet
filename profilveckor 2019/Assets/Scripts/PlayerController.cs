@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour
         {
             if (currentHealthTimer + 0.02f >= healthTimer)
             {
-                healthScript.health -= (originalHealth * 1.25f) - originalHealth;
+                healthScript.ChangedHealth(-((originalHealth * 1.25f) - originalHealth));
                 healthboosted = false;
             }
             healthBuffActive = BuffTimer(healthTimer, ref currentHealthTimer);
