@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public bool invincibleBuffActive;
     public bool speedBuffActive;
     public bool healthBuffActive;
+    bool healthboosted;
 
     [SerializeField]
     private float defenseTimer;
@@ -24,15 +25,27 @@ public class PlayerController : MonoBehaviour
     float currentSpeedTimer = 0f;
     float currentHealthTimer = 0f;
 
+    float originalHealth;
+    float boostedHealth;
+
+    Health_Script healthScript;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        healthScript = GetComponent<Health_Script>();
+        originalHealth = healthScript.health;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!healthboosted && healthBuffActive)
+        {
+            healthboosted = true;
+            healthScript.health = originalHealth * 1.25f;
+        }
+
         if (defenseBuffActive)
         {
             defenseBuffActive = BuffTimer(defenseTimer, ref currentDefenseTimer);
@@ -50,6 +63,11 @@ public class PlayerController : MonoBehaviour
         }
         if (healthBuffActive)
         {
+            if (currentHealthTimer + 0.02f >= healthTimer)
+            {
+                healthScript.health -= (originalHealth * 1.25f) - originalHealth;
+                healthboosted = false;
+            }
             healthBuffActive = BuffTimer(healthTimer, ref currentHealthTimer);
         }
     }

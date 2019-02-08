@@ -885,6 +885,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 1.3311785
       objectReference: {fileID: 0}
+    - target: {fileID: 400096, guid: 4f733677514a66049a737922a7bee29e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.652
+      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 4f733677514a66049a737922a7bee29e, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -905,10 +909,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[4]
       value: 
       objectReference: {fileID: 2100000, guid: f958d0b5c52d5354190ecdb5ac29f309, type: 2}
-    - target: {fileID: 400096, guid: 4f733677514a66049a737922a7bee29e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.652
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f733677514a66049a737922a7bee29e, type: 3}
 --- !u!1 &277616718
@@ -1132,11 +1132,11 @@ GameObject:
   - component: {fileID: 367157899}
   - component: {fileID: 367157898}
   - component: {fileID: 367157897}
-  - component: {fileID: 367157903}
   - component: {fileID: 367157904}
+  - component: {fileID: 367157900}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Player
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1236,6 +1236,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &367157900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367157896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41fdf3b140d1c024a9d818987f11ff9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!4 &367157901
 Transform:
   m_ObjectHideFlags: 0
@@ -1244,7 +1257,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 367157896}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.32741, y: 1.679, z: -8.317}
+  m_LocalPosition: {x: -0.926, y: 1.069, z: -8.317}
   m_LocalScale: {x: 0.0708639, y: 0.06, z: 1}
   m_Children:
   - {fileID: 1417972993}
@@ -1263,19 +1276,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b50298fee0f09e74fa4b4d25bd906bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &367157903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 367157896}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19640c802e0c67343998ae7dec48edf3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activeWeapon: {fileID: 0}
 --- !u!114 &367157904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1288,14 +1288,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef2c2e85c0a2b224083856f2035f4b8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defenseBuffActive: 0
-  invincibleBuffActive: 0
+  defenseBuffActive: 1
+  invincibleBuffActive: 1
   speedBuffActive: 1
-  healthBuffActive: 0
-  defenseTimer: 0
-  invincibilityTimer: 0
-  speedTimer: 0
-  healthTimer: 0
+  healthBuffActive: 1
+  defenseTimer: 10
+  invincibilityTimer: 10
+  speedTimer: 10
+  healthTimer: 10
 --- !u!1 &397977826 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100024, guid: 07274a16067b37146be7b2fed5019e42,
@@ -3034,6 +3034,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeWeapon: {fileID: 0}
+--- !u!114 &1422184884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422184875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41fdf3b140d1c024a9d818987f11ff9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!1 &1460719275 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100022, guid: 07274a16067b37146be7b2fed5019e42,

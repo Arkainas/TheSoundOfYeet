@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Health_Script : MonoBehaviour
 {
-    [SerializeField]
-    float health = 100;
+    public float health = 100;
     // Start is called before the first frame update
     void Start()
     {
