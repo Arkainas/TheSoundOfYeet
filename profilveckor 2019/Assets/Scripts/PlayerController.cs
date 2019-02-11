@@ -12,18 +12,21 @@ public class PlayerController : MonoBehaviour
     bool healthboosted;
 
     [SerializeField]
-    private float defenseTimer;
+    private float defenseTimer = 5f;
     [SerializeField]
-    private float invincibilityTimer;
+    private float invincibilityTimer = 3f;
     [SerializeField]
-    private float speedTimer;
+    private float speedTimer = 5f;
     [SerializeField]
-    private float healthTimer;
+    private float healthTimer = 7f;
 
     float currentDefenseTimer = 0f;
     float currentInvincibilityTimer = 0f;
     float currentSpeedTimer = 0f;
     float currentHealthTimer = 0f;
+
+    public float boostedSpeedMultiplier = 1.5f;
+    public float boostedDefenseMultiplier = 0.5f;
 
     float originalHealth;
     float boostedHealth;

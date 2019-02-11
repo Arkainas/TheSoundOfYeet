@@ -7,14 +7,14 @@ public class Damage_Script : MonoBehaviour
 
     [SerializeField]
     float damage = 50;
-    [SerializeField]
-    float damageReduction;
+
+    PlayerController damageReduction;
     
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        damageReduction.GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
@@ -37,7 +37,7 @@ public class Damage_Script : MonoBehaviour
             }
             else if (enemyHealth && enemyDamageReduction.defenseBuffActive)
             {
-                enemyHealth.ChangedHealth(-damage * damageReduction);
+                enemyHealth.ChangedHealth(-damage * damageReduction.boostedDefenseMultiplier);
             }
             else if(enemyHealth)
             {

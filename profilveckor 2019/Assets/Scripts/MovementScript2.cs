@@ -4,66 +4,50 @@ using UnityEngine;
 
 public class MovementScript2 : MonoBehaviour
 {
+    Rigidbody playerRigidbody;
+
     PlayerController playerController;
-    public float panSpeed = 20f;
     [SerializeField]
     float speed = 10f;
     [SerializeField]
     float speedBoostMultiplier;
+    float originSpeed;
+
+    [SerializeField]
+    string playerHorizontal = "Horizontal_P1";
+    [SerializeField]
+    string playerVertical = "Vertical_P1";
     // Start is called before the first frame update
     void Start()
     {
+        playerRigidbody = GetComponent<Rigidbody>();
         playerController = GetComponent<PlayerController>();
+        originSpeed = speed;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-        if (Input.GetKey(KeyCode.A))
+        if (playerController.speedBuffActive)
         {
-            if (playerController.speedBuffActive)
-            {
-                transform.position += Vector3.left * speed * Time.deltaTime * speedBoostMultiplier;
-                Debug.Log(transform.position);
-            }
-            else
-            {
-                transform.position += Vector3.left * speed * Time.deltaTime;
-            }
+            speed = playerController.boostedSpeedMultiplier;
         }
-        if (Input.GetKey(KeyCode.D))
+        else
         {
-            if (playerController.speedBuffActive)
-            {
-                transform.position += Vector3.right * speed * Time.deltaTime * speedBoostMultiplier;
-            }
-            else
-            {
-                transform.position += Vector3.right * speed * Time.deltaTime;
-            }
+            speed = originSpeed;
         }
-        if (Input.GetKey(KeyCode.W))
+
+        if (Input.GetAxisRaw(playerHorizontal) != 0 || Input.GetAxisRaw(playerVertical) != 0)
         {
-            if (playerController.speedBuffActive)
-            {
-                transform.position += Vector3.up * speed * Time.deltaTime * speedBoostMultiplier;
-            }
-            else
-            {
-                transform.position += Vector3.up * speed * Time.deltaTime;
-            }
+            Vector2 inputDir = new Vector2(Input.GetAxisRaw(playerHorizontal), Input.GetAxisRaw(playerVertical)).normalized;
+            Debug.Log("Dir " + inputDir);
+            playerRigidbody.velocity = (inputDir * speed);
+            Debug.Log("Velocity: " + playerRigidbody.velocity);
         }
-        if (Input.GetKey(KeyCode.S))
+        else
         {
-            if (playerController.speedBuffActive)
-            {
-                transform.position += Vector3.down * speed * Time.deltaTime * speedBoostMultiplier;
-            }
-            else
-            {
-                transform.position += Vector3.down * speed * Time.deltaTime;
-            }
+            playerRigidbody.velocity = new Vector2(0, 0);
         }
+
     }
 }

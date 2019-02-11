@@ -6,9 +6,6 @@ public class Follow_mouse : MonoBehaviour
     void Update()
     {
         Follow_Mouse();
-
-
-
     }
 
     // Update is called once per frame
