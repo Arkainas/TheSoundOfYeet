@@ -41,7 +41,7 @@ public class Weapon_Pickup : MonoBehaviour
        
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Player")
         {

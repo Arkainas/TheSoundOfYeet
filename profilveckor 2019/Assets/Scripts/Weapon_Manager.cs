@@ -33,20 +33,22 @@ public class Weapon_Manager : MonoBehaviour
 
             GameObject projectile = (GameObject)Instantiate(wpn.projectile, transform.position, Quaternion.identity);
 
-            Vector2 dir = Camera.main.ScreenToWorldPoint(Input.mousePosition) - wpn.transform.position;
+            Vector3 dir = Camera.main.WorldToScreenPoint(wpn.transform.position) - Input.mousePosition;
+
+            dir = Camera.main.ScreenToWorldPoint(dir);
 
             projectile.GetComponent<BulletMove>().SetDir(dir);
 
             if (wpn.projectileMode == weapon.Modes.Straight)   
             {
-                projectile.GetComponent<Rigidbody2D>().velocity = transform.parent.localScale.x * dir * wpn.projectileSpeed;
+                projectile.GetComponent<Rigidbody>().velocity = dir * wpn.projectileSpeed;
             }
             else if (wpn.projectileMode == weapon.Modes.Throw)
             {
 
-                projectile.GetComponent<Rigidbody2D>().isKinematic = false;
+                projectile.GetComponent<Rigidbody>().isKinematic = false;
 
-                projectile.GetComponent<Rigidbody2D>().velocity = new Vector2(transform.parent.localScale.x, 1) * wpn.projectileSpeed;
+                projectile.GetComponent<Rigidbody>().velocity = new Vector3(transform.parent.localScale.x, 1) * wpn.projectileSpeed;
             }
 
         }

@@ -5,14 +5,16 @@ using UnityEngine;
 
 public class BulletMove : MonoBehaviour
 {
-    [SerializeField]
-    float speed = 50f;
+    GameObject player;
+    float speed = 10f;
     Vector2 direction;
-    Rigidbody2D bulletRigidbody;
+    Rigidbody bulletRigidbody;
     // Start is called before the first frame update
     void Start()
     {
-        bulletRigidbody = GetComponent<Rigidbody2D>();
+        bulletRigidbody = GetComponent<Rigidbody>();
+        player = GameObject.FindGameObjectWithTag("Player");
+        direction = - player.transform.GetChild(0).right;
     }
 
     // Update is called once per frame
@@ -21,8 +23,10 @@ public class BulletMove : MonoBehaviour
         bulletRigidbody.velocity = direction * speed;
     }
 
+    
+
     internal void SetDir(Vector2 dir)
     {
-        direction = dir;
+        //direction = dir.normalized;
     }
 }
